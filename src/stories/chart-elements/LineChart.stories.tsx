@@ -65,6 +65,22 @@ export const MinValueZeroAndMaxValue: Story = {
   },
 };
 
+export const MinValueZeroAndMaxValueWithAutoMin: Story = {
+  args: {
+    autoMinValue: true,
+    minValue: 0,
+    maxValue: 7000,
+    data: [
+      ...data,
+      {
+        month: "Aug 21",
+        Sales: 6700,
+        "Successful Payments": 3000,
+      },
+    ],
+  },
+};
+
 export const OtherColors: Story = {
   args: { colors: ["rose", "purple"] },
 };
