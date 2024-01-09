@@ -50,6 +50,21 @@ export const MinValueAndMaxValue: Story = {
   args: { minValue: -1000, maxValue: 4000 },
 };
 
+export const MinValueZeroAndMaxValue: Story = {
+  args: {
+    minValue: 0,
+    maxValue: 7000,
+    data: [
+      ...data,
+      {
+        month: "Aug 21",
+        Sales: 6700,
+        "Successful Payments": 3000,
+      },
+    ],
+  },
+};
+
 export const OtherColors: Story = {
   args: { colors: ["rose", "purple"] },
 };
